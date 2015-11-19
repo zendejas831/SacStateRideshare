@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.teamnoob.sacstaterideshare.ProfileActivity"
+    android:background="@drawable/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ProfileTitle"
+        android:id="@+id/TVprofileTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messenger"
+        android:id="@+id/button_Messenger"
+        android:layout_above="@+id/button_Rating"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Your Rating"
+        android:id="@+id/button_Rating"
+        android:layout_above="@+id/button_edit"
+        android:layout_alignStart="@+id/button_Messenger" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/button_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="miller4@csus.edu"
+        android:id="@+id/TV_Email"
+        android:layout_below="@+id/TV_Driver_Pass"
+        android:layout_alignEnd="@+id/button_Rating" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Driver"
+        android:id="@+id/TV_Driver_Pass"
+        android:layout_below="@+id/TVprofileTitle"
+        android:layout_alignStart="@+id/TV_Email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Male"
+        android:id="@+id/TV_Gender"
+        android:layout_below="@+id/TV_Email"
+        android:layout_alignStart="@+id/TV_Email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student"
+        android:id="@+id/TV_relation"
+        android:layout_below="@+id/TV_Gender"
+        android:layout_alignStart="@+id/TV_Gender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7:00am"
+        android:id="@+id/TV_toSchool"
+        android:layout_below="@+id/TV_relation"
+        android:layout_alignStart="@+id/TV_relation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="4:00pm"
+        android:id="@+id/TV_schoolOut"
+        android:layout_below="@+id/TV_toSchool"
+        android:layout_alignStart="@+id/TV_toSchool" />
+
+</RelativeLayout>

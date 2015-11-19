@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Ride Share</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string><!-- Strings related to login -->
+    <string name="string_enter_name">Enter your name</string>
+    <string name="string_choose_username">Choose your username</string>
+    <string name="string_choose_password">Choose your password</string>
+    <string name="string_enter_email">Enter your email</string>
+    <string name="string_username">Enter Username</string>
+    <string name="string_already_registered">Already Registered</string>
+    <string name="string_change_password">Change your Password</string>
+    <string name="string_user_login">Login</string>
+    <string name="string_new_password">New Password</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">Register</string>
+    <string name="button_back">Back</string>
+    <string name="textview_password">Enter Password</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="action_forgot_password">Forgot Your Password?</string>
+    <string name="action_request_register">DON\'T HAVE AN ACCOUNT?</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_change_password">Change Password</string><string name="action_cancel">Cancel</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <!-- Strings related to labels in AndroidManifest -->
+    <string name="title_activity_register">ActivityRegister</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_change_password">ActivityChangePassword</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="ProfileTitle">Username</string>
+    <string name="RatingTitle">How are you Rated</string>
+    <string name="onTime">On Time:</string>
+    <string name="TV_clean">Cleanliness</string>
+    <string name="TV_comment">Comments:</string>
+    <string name="TV_Com1">1.</string>
+    <string name="title_activity_main_profile">mainProfileActivity</string>
+
+    <string name="title_activity_search_landing">searchLanding</string>
+    <string name="title_activity_rt_search">rtSearch</string>
+    <string name="title_activity_ow_search">owSearch</string>
+</resources>
