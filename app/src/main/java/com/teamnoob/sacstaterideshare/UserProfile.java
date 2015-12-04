@@ -11,10 +11,8 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
 
     private TextView textView;
 
-    //private Button buttonSearchLanding;
     private Button buttonProfile;
-    private Button button_ow_Search;
-    private Button button_rt_Search;
+    private Button buttonNewSearch;
     private Button buttonRating;
 
     @Override
@@ -36,11 +34,8 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
         buttonProfile = (Button) findViewById(R.id.buttonProfile);
         buttonProfile.setOnClickListener(this);
 
-        button_ow_Search = (Button) findViewById(R.id.button_ow_Search);
-        button_ow_Search.setOnClickListener(this);
-
-        button_rt_Search = (Button) findViewById(R.id.button_rt_Search);
-        button_rt_Search.setOnClickListener(this);
+        buttonNewSearch = (Button) findViewById(R.id.button_new_search);
+        buttonNewSearch.setOnClickListener(this);
 
         buttonRating = (Button) findViewById(R.id.buttonRating);
         buttonRating.setOnClickListener(this);
@@ -48,17 +43,11 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        /*if(v == buttonSearchLanding){
-            startActivity(new Intent(this, searchLanding.class));
-        }*/
+        if(v == buttonNewSearch){
+            startActivity(new Intent(this, newSearch.class));
+        }
         if(v == buttonProfile ) {
             startActivity(new Intent(this, ProfileActivity.class));
-        }
-        if(v == button_ow_Search){
-            startActivity(new Intent(this, owSearch.class));
-        }
-        if(v == button_rt_Search ) {
-            startActivity(new Intent(this, rtSearch.class));
         }
         if(v == buttonRating ) {
             startActivity(new Intent(this, RatingActivity.class));

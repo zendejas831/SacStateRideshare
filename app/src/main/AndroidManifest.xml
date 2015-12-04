@@ -43,19 +43,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".searchLanding"
-            android:label="@string/title_activity_search_landing"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:name=".OneWaySearchActivity" >
         </activity>
         <activity
-            android:name=".rtSearch"
-            android:label="@string/title_activity_rt_search"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".newSearch" >
         </activity>
         <activity
-            android:name=".owSearch"
-            android:label="@string/title_activity_ow_search"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".RoundTripSearchActivity" >
+        </activity>
+        <activity
+            android:name=".SearchResultActivity" >
         </activity>
     </application>
 

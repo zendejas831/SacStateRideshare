@@ -29,14 +29,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ow Search"
-        android:id="@+id/button_ow_Search" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="rtSearch"
-        android:id="@+id/button_rt_Search" />
+        android:text="New Search"
+        android:id="@+id/button_new_search" />
 
     <Button
         android:layout_width="wrap_content"

@@ -21,7 +21,7 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
     public static final String PASSWORD = "PASSWORD";
 
     // School server
-    private static final String LOGIN_URL = "http://athena.ecs.csus.edu/~zendejaj/rideshare/UserRegistration/login.php";
+        private static final String LOGIN_URL = "http://athena.ecs.csus.edu/~zendejaj/rideshare/UserRegistration/login.php";
 
     private EditText editTextUserName;
     private EditText editTextPassword;
@@ -99,7 +99,8 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         if(v == buttonLogin){
-            login();
+            //login();
+            startActivity(new Intent(this, UserProfile.class));
         }
         if(v == buttonRegisterRequest) {
             startActivity(new Intent(this, ActivityRegister.class));

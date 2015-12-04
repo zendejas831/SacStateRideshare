@@ -42,4 +42,5 @@
     <string name="title_activity_search_landing">searchLanding</string>
     <string name="title_activity_rt_search">rtSearch</string>
     <string name="title_activity_ow_search">owSearch</string>
+    <string name="string_user_agreement">You agree that you are over 18 and to the TERMS OF SERVICE</string>
 </resources>
