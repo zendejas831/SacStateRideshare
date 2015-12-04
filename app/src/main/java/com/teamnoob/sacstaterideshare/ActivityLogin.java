@@ -99,8 +99,8 @@ public class ActivityLogin extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         if(v == buttonLogin){
-            //login();
-            startActivity(new Intent(this, UserProfile.class));
+            login();
+            //startActivity(new Intent(this, UserProfile.class));
         }
         if(v == buttonRegisterRequest) {
             startActivity(new Intent(this, ActivityRegister.class));

@@ -55,6 +55,18 @@
         android:inputType="textEmailAddress"
         android:id="@+id/editTextEmail" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_enter_gender" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_gender_spinner"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="right" />
+
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

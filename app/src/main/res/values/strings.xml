@@ -11,6 +11,7 @@
     <string name="string_change_password">Change your Password</string>
     <string name="string_user_login">Login</string>
     <string name="string_new_password">New Password</string>
+    <string name="string_enter_gender">Enter your Gender</string>
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
     <string name="action_register">Register</string>
@@ -43,4 +44,11 @@
     <string name="title_activity_rt_search">rtSearch</string>
     <string name="title_activity_ow_search">owSearch</string>
     <string name="string_user_agreement">You agree that you are over 18 and to the TERMS OF SERVICE</string>
+
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
 </resources>
