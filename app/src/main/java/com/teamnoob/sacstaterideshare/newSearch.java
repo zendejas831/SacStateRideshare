@@ -87,6 +87,8 @@ public class newSearch extends AppCompatActivity implements View.OnClickListener
 
         //gender spinner
         Spinner genderSpinner = (Spinner) findViewById(R.id.genderSpinner);
+        //ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
+        //        R.array.gender_array, android.R.layout.simple_spinner_item);
         ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(newSearch.this,
                 android.R.layout.simple_spinner_item, genderSpinnerArray);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

@@ -9,8 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class UserProfile extends AppCompatActivity implements View.OnClickListener{//, AdapterView.OnItemSelectedListener{
+public class UserProfile extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
 
     private static String userGender;
     private static final String[] genderSpinnerArray1 ={"Gender:", "Female", "Male", "Other"};
@@ -46,7 +47,7 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
         buttonRating = (Button) findViewById(R.id.buttonRating);
         buttonRating.setOnClickListener(this);
 
-        create_and_fill_Spinners();
+        //create_and_fill_Spinners();
     }
 
     private void create_and_fill_Spinners(){
@@ -59,6 +60,9 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+        //Toast.makeText(UserProfile.this, "spinner before init", Toast.LENGTH_LONG).show();
+        spinner.setOnItemSelectedListener(this);
+
 
         /*//gender spinner
         Spinner genderSpinner = (Spinner) findViewById(R.id.register_gender_spinner);
@@ -80,6 +84,16 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
         if(v == buttonRating ) {
             startActivity(new Intent(this, RatingActivity.class));
         }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        //Toast.makeText(UserProfile.this, "before spinner init", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 
     /*@Override

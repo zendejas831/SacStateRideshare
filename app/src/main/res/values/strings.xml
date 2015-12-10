@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Ride Share</string>
+
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string><!-- Strings related to login -->
+    <string name="action_settings">Settings</string>
+
+    <!--Strings realted to Login-->
     <string name="string_enter_name">Enter your name</string>
     <string name="string_choose_username">Choose your username</string>
     <string name="string_choose_password">Choose your password</string>
@@ -12,20 +15,27 @@
     <string name="string_user_login">Login</string>
     <string name="string_new_password">New Password</string>
     <string name="string_enter_gender">Enter your Gender</string>
+    <string name="string_user_agreement">You agree that you are over 18 and to the TERMS OF SERVICE</string>
+
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
+
     <string name="action_register">Register</string>
+
     <string name="button_back">Back</string>
     <string name="textview_password">Enter Password</string>
+
     <string name="action_sign_in">LOGIN</string>
     <string name="action_forgot_password">Forgot Your Password?</string>
     <string name="action_request_register">DON\'T HAVE AN ACCOUNT?</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="action_change_password">Change Password</string><string name="action_cancel">Cancel</string>
+
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+
     <!-- Strings related to labels in AndroidManifest -->
     <string name="title_activity_register">ActivityRegister</string>
     <string name="title_activity_user_profile">UserProfile</string>
@@ -43,12 +53,30 @@
     <string name="title_activity_search_landing">searchLanding</string>
     <string name="title_activity_rt_search">rtSearch</string>
     <string name="title_activity_ow_search">owSearch</string>
-    <string name="string_user_agreement">You agree that you are over 18 and to the TERMS OF SERVICE</string>
 
+    <!-- String-Array for spinners-->
     <string-array name="gender_array">
-        <item>Gender</item>
+        <item>Select (Gender)</item>
         <item>Male</item>
         <item>Female</item>
         <item>Other</item>
+    </string-array>
+
+    <string-array name="search_array">
+        <item>Select (Search)</item>
+        <item>One Way</item>
+        <item>Round Trip</item>
+    </string-array>
+
+    <string-array name="status_array">
+        <item>Select (Status)</item>
+        <item>Student</item>
+        <item>Faculty</item>
+    </string-array>
+
+    <string-array name="disability_array">
+        <item>Select (Disability)</item>
+        <item>YES</item>
+        <item>NO</item>
     </string-array>
 </resources>
