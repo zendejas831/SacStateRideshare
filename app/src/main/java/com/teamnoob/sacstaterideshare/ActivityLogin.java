@@ -17,11 +17,11 @@ import java.util.HashMap;
 
 public class ActivityLogin extends AppCompatActivity implements View.OnClickListener{
 
-    public static final String USER_NAME = "USER_NAME";
+    public static final String USER_NAME = "username";
     public static final String PASSWORD = "PASSWORD";
 
     // School server
-        private static final String LOGIN_URL = "http://athena.ecs.csus.edu/~zendejaj/rideshare/UserRegistration/login.php";
+    private static final String LOGIN_URL = "http://athena.ecs.csus.edu/~zendejaj/rideshare/UserRegistration/login.php";
 
     private EditText editTextUserName;
     private EditText editTextPassword;

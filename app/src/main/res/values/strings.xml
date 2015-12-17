@@ -14,6 +14,7 @@
     <string name="string_change_password">Change your Password</string>
     <string name="string_user_login">Login</string>
     <string name="string_new_password">New Password</string>
+    <string name="string_enter_status">Enter your Status</string>
     <string name="string_enter_gender">Enter your Gender</string>
     <string name="string_user_agreement">You agree that you are over 18 and to the TERMS OF SERVICE</string>
 
@@ -56,26 +57,26 @@
 
     <!-- String-Array for spinners-->
     <string-array name="gender_array">
-        <item>Select (Gender)</item>
+        <item>Select</item>
         <item>Male</item>
         <item>Female</item>
         <item>Other</item>
     </string-array>
 
     <string-array name="search_array">
-        <item>Select (Search)</item>
+        <item>Select</item>
         <item>One Way</item>
         <item>Round Trip</item>
     </string-array>
 
     <string-array name="status_array">
-        <item>Select (Status)</item>
+        <item>Select</item>
         <item>Student</item>
         <item>Faculty</item>
     </string-array>
 
     <string-array name="disability_array">
-        <item>Select (Disability)</item>
+        <item>Select</item>
         <item>YES</item>
         <item>NO</item>
     </string-array>

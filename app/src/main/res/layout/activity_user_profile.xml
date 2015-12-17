@@ -1,5 +1,5 @@
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+                <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,18 +30,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Search"
-        android:id="@+id/button_new_search" />
+        android:id="@+id/button_new_search"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Profile"
-        android:id="@+id/buttonProfile" />
+        android:id="@+id/buttonProfile"
+        android:layout_gravity="center" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rating"
-        android:id="@+id/buttonRating" />
+        android:id="@+id/buttonRating"
+        android:layout_gravity="center" />
 
 </LinearLayout>

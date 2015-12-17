@@ -11,10 +11,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class UserProfile extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
-
-    private static String userGender;
-    private static final String[] genderSpinnerArray1 ={"Gender:", "Female", "Male", "Other"};
+public class UserProfile extends AppCompatActivity implements View.OnClickListener {
 
     private TextView textView;
 
@@ -47,30 +44,6 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
         buttonRating = (Button) findViewById(R.id.buttonRating);
         buttonRating.setOnClickListener(this);
 
-        //create_and_fill_Spinners();
-    }
-
-    private void create_and_fill_Spinners(){
-
-        Spinner spinner = (Spinner) findViewById(R.id.register_gender_spinner);//spinner);
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.gender_array, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
-        //Toast.makeText(UserProfile.this, "spinner before init", Toast.LENGTH_LONG).show();
-        spinner.setOnItemSelectedListener(this);
-
-
-        /*//gender spinner
-        Spinner genderSpinner = (Spinner) findViewById(R.id.register_gender_spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(UserProfile.this,
-                android.R.layout.simple_spinner_item, genderSpinnerArray1);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        genderSpinner.setAdapter(adapter);
-        genderSpinner.setOnItemSelectedListener(this);*/
     }
 
     @Override
@@ -85,43 +58,5 @@ public class UserProfile extends AppCompatActivity implements View.OnClickListen
             startActivity(new Intent(this, RatingActivity.class));
         }
     }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        //Toast.makeText(UserProfile.this, "before spinner init", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
-
-    /*@Override
-    public void onItemSelected(AdapterView<?> parent, View v, int position, long id){
-        switch(parent.getId()){
-            case R.id.register_gender_spinner: //spinner3: //gender
-                switch(position){
-                    case 0://Gender:
-                        break;
-                    case 1://female
-                        userGender = "female";
-                        break;
-                    case 2: //male
-                        userGender = "male";
-                        break;
-                    case 3: //other
-                        userGender = "other";
-                        break;
-                }
-                break;
-        }
-
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> arg0){
-
-    }*/
 
 }
